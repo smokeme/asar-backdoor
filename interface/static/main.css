@@ -1,0 +1,90 @@
+/* Custom styles to complement Bootstrap */
+
+/* Main layout */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Make sidebar resizable */
+#clients-sidebar {
+    min-width: 200px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+#explorer-panel {
+    min-width: 200px;
+    resize: horizontal;
+    overflow: auto;
+}
+
+/* Monaco editor styles */
+.monaco-editor {
+    width: 100%;
+    height: 100%;
+}
+
+/* Terminal scrollbar */
+#terminal-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#terminal-container::-webkit-scrollbar-track {
+    background: #212529;
+}
+
+#terminal-container::-webkit-scrollbar-thumb {
+    background: #495057;
+    border-radius: 3px;
+}
+
+#terminal-container::-webkit-scrollbar-thumb:hover {
+    background: #6c757d;
+}
+
+/* File list item styling */
+.file-item {
+    cursor: pointer;
+}
+
+.file-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.file-item.selected {
+    background-color: rgba(13, 110, 253, 0.3);
+}
+
+/* Toast notifications */
+.toast {
+    max-width: 350px;
+}
+
+/* Tab styles */
+.nav-tabs .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    color: #dee2e6;
+    background-color: #343a40;
+    border-color: #495057;
+    padding: 0.25rem 0.75rem;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.nav-tabs .nav-item .nav-link .close-tab {
+    margin-left: 0.5rem;
+}
+
+/* Make terminal resizable */
+#terminal-container {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 50vh;
+}
